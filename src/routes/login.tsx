@@ -86,9 +86,9 @@ function LoginPage() {
       </div>
 
       <motion.div
-        initial={{ opacity: 2, y: 20, scale: 0.98 }}
+        initial={{ opacity: 1, y: 20, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1.5 }}
         className="relative z-10 w-full max-w-md"
       >
         {/* Logo */}
