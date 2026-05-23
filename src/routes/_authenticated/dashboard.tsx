@@ -139,26 +139,30 @@ function DashboardPage() {
         <h2 className="mt-10 font-display text-xl font-semibold tracking-tight">Ferramentas</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {tools.map((t, i) => (
-            <motion.button
+            <motion.div
               key={t.title}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-              className="group relative overflow-hidden rounded-2xl glass p-5 text-left transition hover:scale-[1.02]"
             >
-              <div
-                className="absolute -right-8 -top-8 h-32 w-32 rounded-full opacity-20 blur-2xl transition group-hover:opacity-40"
-                style={{ background: t.color }}
-              />
-              <div
-                className="relative grid h-10 w-10 place-items-center rounded-xl"
-                style={{ background: `color-mix(in oklab, ${t.color} 20%, transparent)` }}
+              <Link
+                to="/create"
+                className="group relative block overflow-hidden rounded-2xl glass p-5 text-left transition hover:scale-[1.02]"
               >
-                <t.icon className="h-5 w-5" style={{ color: t.color }} />
-              </div>
-              <div className="relative mt-4 font-display text-base font-semibold">{t.title}</div>
-              <div className="relative mt-1 text-xs text-muted-foreground">{t.desc}</div>
-            </motion.button>
+                <div
+                  className="absolute -right-8 -top-8 h-32 w-32 rounded-full opacity-20 blur-2xl transition group-hover:opacity-40"
+                  style={{ background: t.color }}
+                />
+                <div
+                  className="relative grid h-10 w-10 place-items-center rounded-xl"
+                  style={{ background: `color-mix(in oklab, ${t.color} 20%, transparent)` }}
+                >
+                  <t.icon className="h-5 w-5" style={{ color: t.color }} />
+                </div>
+                <div className="relative mt-4 font-display text-base font-semibold">{t.title}</div>
+                <div className="relative mt-1 text-xs text-muted-foreground">{t.desc}</div>
+              </Link>
+            </motion.div>
           ))}
         </div>
 
