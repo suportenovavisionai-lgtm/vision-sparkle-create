@@ -45,7 +45,7 @@ function LoginPage() {
           toast.error(error.message);
         } else {
           toast.success("Bem-vindo de volta!");
-          router.navigate({ to: "/" });
+          router.navigate({ to: "/dashboard" });
         }
       } else {
         const { error } = await supabase.auth.signUp({
@@ -77,7 +77,7 @@ function LoginPage() {
         return;
       }
       toast.success("Bem-vindo!");
-      router.navigate({ to: "/" });
+      router.navigate({ to: "/dashboard" });
     } finally {
       setLoading(false);
     }
