@@ -79,7 +79,7 @@ function LoginPage() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden px-4">
       {/* Animated background orbs */}
-      <div className="pointer-events-none absolute inset- 0">
+      <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-[color:var(--neon-violet)] opacity-20 blur-[100px] animate-pulse" />
         <div className="absolute -right-20 bottom-1/4 h-72 w-72 rounded-full bg-[color:var(--neon-blue)] opacity-20 blur-[100px] animate-pulse" />
         <div className="absolute left-1/2 top-1/3 h-56 w-56 -translate-x-1/2 rounded-full bg-[color:var(--neon-pink)] opacity-15 blur-[90px] animate-pulse" />
