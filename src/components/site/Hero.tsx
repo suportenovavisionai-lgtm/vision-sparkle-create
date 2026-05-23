@@ -44,7 +44,7 @@ export function Hero() {
           className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3"
           id="cta"
         >
-          <a href="#pricing" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground glow">
+          <a href="/login" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground glow">
             Começar agora
             <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
           </a>
