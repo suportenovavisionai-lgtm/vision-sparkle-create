@@ -40,10 +40,10 @@ function DashboardPage() {
   };
 
   const tools = [
-    { icon: Video, title: "Texto → Vídeo", desc: "Gere cenas cinematográficas a partir de um prompt.", color: "var(--neon-violet)" },
-    { icon: ImageIcon, title: "Foto Animada", desc: "Transforme imagens estáticas em vídeos vivos.", color: "var(--neon-blue)" },
-    { icon: Mic, title: "Narração IA", desc: "Vozes realistas em múltiplos idiomas.", color: "var(--neon-pink)" },
-    { icon: Wand2, title: "Auto Viral", desc: "IA otimiza seu vídeo para TikTok e Reels.", color: "var(--neon-violet)" },
+    { icon: Video, title: "Texto → Vídeo", desc: "Gere cenas cinematográficas a partir de um prompt.", color: "var(--neon-violet)", to: "/video" as const },
+    { icon: ImageIcon, title: "Foto Animada", desc: "Transforme imagens estáticas em vídeos vivos.", color: "var(--neon-blue)", to: "/create" as const },
+    { icon: Mic, title: "Narração IA", desc: "Vozes realistas em múltiplos idiomas.", color: "var(--neon-pink)", to: "/create" as const },
+    { icon: Wand2, title: "Auto Viral", desc: "IA otimiza seu vídeo para TikTok e Reels.", color: "var(--neon-violet)", to: "/video" as const },
   ];
 
   const stats = [
