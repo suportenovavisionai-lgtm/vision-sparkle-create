@@ -146,7 +146,7 @@ function DashboardPage() {
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
             >
               <Link
-                to="/create"
+                to={t.to}
                 className="group relative block overflow-hidden rounded-2xl glass p-5 text-left transition hover:scale-[1.02]"
               >
                 <div
