@@ -71,15 +71,26 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-              <button
-                className={`mt-8 w-full rounded-full px-5 py-3 text-sm font-medium transition ${
-                  p.highlight
-                    ? "bg-brand text-primary-foreground glow"
-                    : "glass hover:border-[color:var(--neon-violet)]/40"
-                }`}
-              >
-                {p.cta}
-              </button>
+              {p.name === "Pro" ? (
+                <a
+                  href="https://mpago.li/1JFP8Km"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-block w-full rounded-full px-5 py-3 text-sm font-medium transition bg-brand text-primary-foreground glow text-center"
+                >
+                  {p.cta}
+                </a>
+              ) : (
+                <button
+                  className={`mt-8 w-full rounded-full px-5 py-3 text-sm font-medium transition ${
+                    p.highlight
+                      ? "bg-brand text-primary-foreground glow"
+                      : "glass hover:border-[color:var(--neon-violet)]/40"
+                  }`}
+                >
+                  {p.cta}
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
