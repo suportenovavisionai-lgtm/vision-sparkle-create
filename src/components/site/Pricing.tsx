@@ -13,7 +13,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "R$79",
+    price: "R$29,90",
     period: "/mês",
     desc: "Para criadores que publicam todos os dias.",
     features: ["1.500 créditos / mês", "Vídeos até 30s", "1080p", "Sem marca d'água", "Avatares IA", "Render prioritário"],
@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Business",
-    price: "R$249",
+    price: "R$99,90",
     period: "/mês",
     desc: "Equipes e agências em escala.",
     features: ["Créditos ilimitados*", "Vídeos até 2min", "4K", "API própria", "Multi-seat", "Suporte dedicado"],
