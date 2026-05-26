@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Sparkles, Shield, Zap } from "lucide-react";
 import hero from "@/assets/hero-visionai.jpg";
 
 export function Hero() {
@@ -44,13 +44,31 @@ export function Hero() {
           className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3"
           id="cta"
         >
-          <a href="/login" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground glow">
+          <a
+            href="/login"
+            className="group relative inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_60px_color-mix(in_oklab,var(--neon-violet)_55%,transparent)]"
+          >
+            <Sparkles className="h-4 w-4" />
             Começar agora
-            <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
-          <a href="#showcase" className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-medium">
+          <a
+            href="#showcase"
+            className="inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 text-sm font-semibold transition-all duration-300 hover:border-[color:var(--neon-violet)]/40 hover:bg-white/[0.04]"
+          >
             <Play className="h-4 w-4" /> Ver demonstração
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.25 }}
+          className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground"
+        >
+          <span className="inline-flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-[color:var(--neon-blue)]" /> Pagamento seguro</span>
+          <span className="inline-flex items-center gap-1.5"><Zap className="h-3.5 w-3.5 text-[color:var(--neon-violet)]" /> Render em segundos</span>
+          <span className="inline-flex items-center gap-1.5"><Sparkles className="h-3.5 w-3.5 text-[color:var(--neon-pink)]" /> +10.000 criadores</span>
         </motion.div>
 
         <motion.div
